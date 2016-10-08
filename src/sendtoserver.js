@@ -42,7 +42,7 @@ function getCurrentTabUrl(callback) {
 
 function sendToServer()
 {
-   $.post('phishnet.acorn.pw', {xml: yourXMLString });
+   $.post('http://phishnet.acorn.pw/report.php', {getCurrentTabUrl() });
 }
 
 //event listener for report this page button
