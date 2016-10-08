@@ -7,7 +7,7 @@
 
   "browser_action": {
     "default_icon": "resources/icon.png",
-    "default_popup": "quickstart.html",
+    "default_popup": "popup.html",
     "default_title": "Click here!"
   },
     
