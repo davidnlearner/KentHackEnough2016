@@ -14,7 +14,8 @@
 	"permissions": [
 		"activeTab",
 		"identity",
-		"*://*.google.com/*"
+		"*://*.google.com/*",
+		"*://phishnet.acorn.pw/*"
 	],
 
 	"content_security_policy": "script-src https://*.google.com 'unsafe-eval'; object-src 'self'",
