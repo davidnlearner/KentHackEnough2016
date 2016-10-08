@@ -4,6 +4,9 @@
 document.addEventListener('DOMContentLoaded', () => {
   var el = document.getElementById("but1");
   el.addEventListener("click", sendCurrentUrl);
+  var e2 = document.getElementById("but2");
+  var text = document.getElementById("textfield");
+  e2.addEventListener("click", function() { sendToServer(text.value);});
 });
 /**
  * Get the current URL.
