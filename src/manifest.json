@@ -10,6 +10,9 @@
     "default_popup": "popup.html",
     "default_title": "Click here!"
   },
+  
+  //"page_action": {
+    
   "permissions": [
     "activeTab",
     "https://ajax.googleapis.com/"
