@@ -1,20 +1,28 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 6,
 
   "name": "Phishnet",
   "description": "Email scraper automatically stops phishing attacks and implements crowd-sourced flagging system for building local phishing lists",
   "version": "1.0",
-  "default_locale": "en",
 
   "browser_action": {
     "default_icon": "resources/icon.png",
     "default_popup": "popup.html",
     "default_title": "Click here!"
   },
+  
+  "background": {
+    "scripts": ["base64.js", "background.js"]
+  },
     
   "permissions": [
     "activeTab",
-    "documentScan",
-    "webRequestBlocking"
-  ]
+     "identity",
+    "*://*.google.com/*"
+  ],
+  
+  "content_security_policy": "script-src https://*.google.com 'unsafe-eval'; object-src 'self'",
+  "oauth2": {
+    "client_id": "client_id.json"
+  }
 }
