@@ -61,10 +61,10 @@ function sendCurrentUrl()
 
 function printSuccess()
 {
-    element.style.display = "";
+   document.getElementById("success").style.display = "";
 }
   
 function printFailure()
 {
-    element.style.display = "";
+   document.getElementById("failure").style.display = "";
 }
