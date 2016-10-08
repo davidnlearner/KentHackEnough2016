@@ -1,29 +1,29 @@
 {
-  "manifest_version": 6,
+	"manifest_version": 6,
 
-  "name": "Phishnet",
-  "description": "Email scraper automatically stops phishing attacks and implements crowd-sourced flagging system for building local phishing lists",
-  "version": "1.0",
+	"name": "Phishnet",
+	"description": "Email scraper automatically stops phishing attacks and implements crowd-sourced flagging system for building local phishing lists",
+	"version": "1.0",
 
-  "browser_action": {
-    "default_icon": "resources/icon.png",
-    "default_popup": "popup.html",
-    "default_title": "Click here!"
-  },
-    
-  "permissions": [
-    "activeTab",
-     "identity",
-    "*://*.google.com/*"
-  ],
-  
-  "js": "jquery-3.1.1.min.js",
-  
-  "content_security_policy": "script-src https://*.google.com 'unsafe-eval'; object-src 'self'",
-  "oauth2": {
-    "client_id": "12714912285-n4a1hfe1814aje209t3pdn7mh9eoecl9.apps.googleusercontent.com",
-    "scopes": [
-      "https://www.googleapis.com/auth/gmail.modify"
-    ]
-            }
+	"browser_action": {
+		"default_icon": "resources/icon.png",
+		"default_popup": "popup.html",
+		"default_title": "Click here!"
+	},
+
+	"permissions": [
+		"activeTab",
+		"identity",
+		"*://*.google.com/*"
+	],
+
+	"js": "jquery-3.1.1.min.js",
+
+	"content_security_policy": "script-src https://*.google.com 'unsafe-eval'; object-src 'self'",
+	"oauth2": {
+		"client_id": "12714912285-n4a1hfe1814aje209t3pdn7mh9eoecl9.apps.googleusercontent.com",
+		"scopes": [
+			"https://www.googleapis.com/auth/gmail.modify"
+		]
+	}
 }
