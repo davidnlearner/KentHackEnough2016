@@ -18,3 +18,4 @@ function getMessage(userId, messageId, callback) {
 function callback(){
 	console.log("It worked" + Date.now());
 }
+
