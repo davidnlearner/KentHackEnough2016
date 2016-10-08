@@ -5,7 +5,6 @@
   "description": "Email scraper automatically stops phishing attacks and implements crowd-sourced flagging system for building local phishing lists",
   "version": "1.0",
   "default_locale": "en",
-  "icons": "resources/icon.png",
 
   "browser_action": {
     "default_icon": "resources/icon.png",
