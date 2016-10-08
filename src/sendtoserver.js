@@ -54,7 +54,7 @@ else if (but1.attachEvent)
 
 //event listener for report by url button
 var but2 = document.getElementById("but2");
-if (el.addEventListener)
-    el.addEventListener("click", doFunction, false);
-else if (el.attachEvent)
-    el.attachEvent('onclick', doFunction)
+if (but2.addEventListener)
+    but2.addEventListener("click", doFunction, false);
+else if (but2.attachEvent)
+    but2.attachEvent('onclick', doFunction)
