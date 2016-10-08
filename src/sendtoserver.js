@@ -1,7 +1,7 @@
 /**
  * script to send flagged URLs to server
  */
-document.addEventListener('DOMContentReady', () => {
+document.addEventListener('DOMContentLoaded', () => {
   var el = document.getElementById("but1");
   el.addEventListener("click", sendCurrentUrl);
   alert("buttz");
