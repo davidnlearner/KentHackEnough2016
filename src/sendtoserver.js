@@ -50,6 +50,6 @@ function getCurrentTabUrl(callback) {
 
 function sendToServer(toServer)
 {
-   $.post('http://phishnet.acorn.pw/report.php', {url: url, client: "poopybutt"});
+   $.post('http://phishnet.acorn.pw/report.php', {url: toServer, client: "poopybutt"});
 }
 
