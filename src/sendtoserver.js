@@ -11,6 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
   var e2 = document.getElementById("but2");
   var text = document.getElementById("textfield");
   e2.addEventListener("click", function() { sendToServer(text.value);});
+  document.getElementById("success").style.display = "none"; //hide elements
+  document.getElementById("failure").style.display = "none";
 });
 /**
  * Get the current URL.
