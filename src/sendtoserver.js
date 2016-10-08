@@ -44,3 +44,17 @@ function sendToServer()
 {
    $.post('phishnet.acorn.pw', {xml: yourXMLString });
 }
+
+//event listener for report this page button
+var but1 = document.getElementById("but1");
+if (but1.addEventListener)
+    but1.addEventListener("click", doFunction, false);
+else if (but1.attachEvent)
+    but1.attachEvent('onclick', doFunction)
+
+//event listener for report by url button
+var but2 = document.getElementById("but2");
+if (el.addEventListener)
+    el.addEventListener("click", doFunction, false);
+else if (el.attachEvent)
+    el.attachEvent('onclick', doFunction)
