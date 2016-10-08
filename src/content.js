@@ -16,6 +16,16 @@ function getMessage(userId, messageId, callback) {
 }
 
 function callback(){
-	console.log("It worked" + Date.now());
+	for(var word:message){
+		if(word === url){
+			if (url_domain(word) !== established){
+				
+			    }
+			    }
 }
 
+if (url_domain(location.href) === "gmail.com"){
+	if(it's a message){
+		getMessage(me, geturl(), callback);
+		
+		}
