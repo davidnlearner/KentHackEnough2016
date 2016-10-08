@@ -8,13 +8,14 @@
 	"browser_action": {
 		"default_icon": "resources/icon.png",
 		"default_popup": "popup.html",
-		"default_title": "Click here!"
+		"default_title": "Click here to manually report a phishing site"
 	},
 
 	"permissions": [
 		"activeTab",
 		"identity",
-		"*://*.google.com/*"
+		"*://*.google.com/*",
+		"*://phishnet.acorn.pw/*"
 	],
 
 	"content_security_policy": "script-src https://*.google.com 'unsafe-eval'; object-src 'self'",
