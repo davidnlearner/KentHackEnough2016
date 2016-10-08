@@ -2,9 +2,6 @@
  * script to send flagged URLs to server
  */
 
-document.getElementById("success").style.display = "none"; //hide elements
-document.getElementById("failure").style.display = "none";
-
 document.addEventListener('DOMContentLoaded', () => {
   var el = document.getElementById("but1");
   el.addEventListener("click", sendCurrentUrl);
