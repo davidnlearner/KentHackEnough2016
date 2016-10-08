@@ -1,5 +1,5 @@
 /**
- * script to send email to CIT about this page
+ * script to send flagged URLs to server
  */
 
 
@@ -53,3 +53,7 @@ function sendToServer(toServer)
    $.post('http://phishnet.acorn.pw/report.php', {url: toServer, client: "poopybutt"});
 }
 
+function sendCurrentUrl()
+{
+    getCurrentTabUrl(function(url) {sendToServer(url)});
+}
