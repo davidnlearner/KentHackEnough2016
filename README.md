@@ -1,1 +1,1 @@
-# Can-tHackEnough2016
+# Kent Hack Enough 2016 submission
