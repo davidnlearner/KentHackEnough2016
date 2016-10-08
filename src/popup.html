@@ -28,10 +28,11 @@
       - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
      -->
     <script src="jquery-3.1.1.min.js"></script>
+    
   </head>
   <body>
-    <div id="but1"><h2>Submit This Page</h2></div>
-    <button type="button">Test</button><br>
+    <div id="but1"><h2>Report This Page</h2></div>
+    <button type="button" onload="sendCurrentUrl()">Report This Page</button><br>
    
     <form action="http://phishnet.acorn.pw/report.php">
     Submit URL:<br>
