@@ -1,6 +1,3 @@
-function messagePage() {
-	
-}
 function url_domain(data) {
 	var dummy = document.createElement('a');
 	dummy.href = data;
@@ -14,7 +11,7 @@ function getMessage(userId, messageId, callback) {
   });
   request.execute(callback);
 }
-
+/*
 function callback(){
 	for(var word:message){
 		if(word === url){
@@ -30,3 +27,7 @@ if (url_domain(location.href) === "gmail.com"){
 		getMessage(me, geturl(), callback);
 		
 		}
+*/
+document.addEventListener('hashchange', function(event) {
+	chrome.runtime.sendMessage; // TODO
+});
