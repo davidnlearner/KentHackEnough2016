@@ -10,3 +10,4 @@ Program as is does nothing, but Chrome loads it and it is now able to support th
 ## Links!
 
  * [list of TLDs](http://www.domainsherpa.com/country-code-top-level-domains/)
+ * [Us on the Chrome Web Store!](https://chrome.google.com/webstore/detail/phishnet/ecodfdiphdmgfagjokjajhfaopgdgbbf)
