@@ -1,12 +1,15 @@
 /**
  * script to send flagged URLs to server
  */
+
 document.addEventListener('DOMContentLoaded', () => {
   var el = document.getElementById("but1");
   el.addEventListener("click", sendCurrentUrl);
   var e2 = document.getElementById("but2");
   var text = document.getElementById("textfield");
   e2.addEventListener("click", function() { sendToServer(text.value);});
+  document.getElementById("success").style.display = "none"; //hide elements
+  document.getElementById("failure").style.display = "none";
 });
 /**
  * Get the current URL.
@@ -46,10 +49,22 @@ function getCurrentTabUrl(callback) {
 
 function sendToServer(toServer)
 {
-   $.post('http://phishnet.acorn.pw/report.php', {url: toServer, client: "poopybutt"});
+  document.getElementById("success").style.display = "none"; //hide elements
+  document.getElementById("failure").style.display = "none";
+  $.post('http://phishnet.acorn.pw/report.php', {url: toServer, client: "poopybutt"}, function(data) { if (data.success) printSuccess(); else printFailure(); });
 }
 
 function sendCurrentUrl()
 {
     getCurrentTabUrl(function(url) {sendToServer(url)});
+}
+
+function printSuccess()
+{
+   document.getElementById("success").style.display = "";
+}
+  
+function printFailure()
+{
+   document.getElementById("failure").style.display = "";
 }
