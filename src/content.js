@@ -19,9 +19,10 @@ function callback(){
 	for(var word:message){
 		if(word === url){
 			if (url_domain(word) !== established){
-				
-			    }
-			    }
+				//send out the error!
+			}
+		}
+	}
 }
 
 if (url_domain(location.href) === "gmail.com"){
