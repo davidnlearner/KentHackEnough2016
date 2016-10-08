@@ -23,7 +23,7 @@
   
   "content_security_policy": "script-src https://*.google.com 'unsafe-eval'; object-src 'self'",
   "oauth2": {
-    "client_id": "client_id.json"
+    "client_id": "12714912285-n4a1hfe1814aje209t3pdn7mh9eoecl9.apps.googleusercontent.com"
   },
   
   "scopes": [
