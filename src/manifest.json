@@ -10,10 +10,6 @@
     "default_popup": "popup.html",
     "default_title": "Click here!"
   },
-  
-  "background": {
-    "scripts": ["base64.js", "background.js"]
-  },
     
   "permissions": [
     "activeTab",
