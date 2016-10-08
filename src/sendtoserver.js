@@ -4,7 +4,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   var el = document.getElementById("but1");
   el.addEventListener("click", sendCurrentUrl);
-  alert("buttz");
 });
 /**
  * Get the current URL.
