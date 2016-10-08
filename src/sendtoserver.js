@@ -2,14 +2,6 @@
  * script to send flagged URLs to server
  */
 
-
-//event listener for report this page button
-var but1 = document.getElementById("but1");
-if (but1.addEventListener)
-    but1.addEventListener("click", doFunction, false);
-else if (but1.attachEvent)
-    but1.attachEvent('onclick', doFunction)
-
     
     
 /**
