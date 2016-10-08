@@ -3,7 +3,15 @@
  */
 
 
+//event listener for report this page button
+var but1 = document.getElementById("but1");
+if (but1.addEventListener)
+    but1.addEventListener("click", doFunction, false);
+else if (but1.attachEvent)
+    but1.attachEvent('onclick', doFunction)
 
+    
+    
 /**
  * Get the current URL.
  *
@@ -40,21 +48,8 @@ function getCurrentTabUrl(callback) {
   });
 }
 
-function sendToServer()
+function sendToServer(toServer)
 {
-   $.post('http://phishnet.acorn.pw/report.php', {getCurrentTabUrl() });
+   $.post('http://phishnet.acorn.pw/report.php', {url: url, client: "poopybutt"});
 }
 
-//event listener for report this page button
-var but1 = document.getElementById("but1");
-if (but1.addEventListener)
-    but1.addEventListener("click", doFunction, false);
-else if (but1.attachEvent)
-    but1.attachEvent('onclick', doFunction)
-
-//event listener for report by url button
-var but2 = document.getElementById("but2");
-if (but2.addEventListener)
-    but2.addEventListener("click", doFunction, false);
-else if (but2.attachEvent)
-    but2.attachEvent('onclick', doFunction)
