@@ -16,12 +16,11 @@ function getMessage(userId, messageId, callback) {
 }
 
 function callback(){
-	if (contacts.contains(sender) === false && top2000.contains{
-		var established = url_domain(sender);
-		for(var word:message){
-			if(word === url){
-				if (url_domain(word) !== established){
-					//flag
+	var established = url_domain(sender);
+	for(var word:message){
+		if(siteList.contains(word){
+			if (url_domain(word) !== established){
+				//flag
 			}
 		}
 	}
