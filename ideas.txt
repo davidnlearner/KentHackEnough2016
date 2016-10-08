@@ -1,2 +1,4 @@
 DJ feedback app
 MMO Scrabble game
+Phishing detection browser extension
+ - host with AWS on domain.com-purchased domain
