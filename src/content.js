@@ -16,17 +16,23 @@ function getMessage(userId, messageId, callback) {
 }
 
 function callback(){
-	for(var word:message){
-		if(word === url){
-			if (url_domain(word) !== established){
-				//send out the error!
+	if (contacts.contains(sender) === false && top2000.contains{
+		var established = url_domain(sender);
+		for(var word:message){
+			if(word === url){
+				if (url_domain(word) !== established){
+					//flag
 			}
 		}
 	}
 }
 
 if (url_domain(location.href) === "gmail.com"){
-	if(it's a message){
-		getMessage(me, geturl(), callback);
-		
+		if(it's a message){
+			getMessage(me, geturl(), callback);	
 		}
+}
+
+
+
+
