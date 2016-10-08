@@ -1,10 +1,10 @@
 /**
  * script to send flagged URLs to server
  */
-
-var el = document.getElementById("but1");
-el.addEventListener("click", sendCurrentUrl);
-    
+document.addEventListener('DOMContentReady', () => {
+  var el = document.getElementById("but1");
+  el.addEventListener("click", sendCurrentUrl);
+});
 /**
  * Get the current URL.
  *
