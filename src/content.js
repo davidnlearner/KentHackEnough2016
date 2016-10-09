@@ -44,6 +44,7 @@ function callback(){
 	}
 	// iterate through SiteDictionary and find most common.
 	// check domains against siteList
+	alert('This page is likely a phishing email!')
 }
 
 if (url_domain(location.href) === "mail.google.com"){
