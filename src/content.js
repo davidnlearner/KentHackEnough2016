@@ -24,13 +24,26 @@ function getMessage(userId, messageId, callback) {
 
 function callback(){
 	var established = url_domain(sender);
+	//for loop to iterate through all items in siteList, then split off to find names of sites like 'Amazon'
+	var tempList = siteList.split('.');
+	var bSiteList = tempList[0];
+	var SiteDictionary = {}
+	var cSiteList = [];
 	for(var word:message){
-		if(siteList.contains(word){
-			if (url_domain(word) !== established){
-				//flag
+		if(word is a url){
+			// line below is if key in keys for a dictionary, do something similar
+			if (SiteDictionary.contains(url_domain(word)) !== true){
+				SiteDictionary{url_domain(word)} += 1;
+			} else {
+				SiteDictionary.add(url_domain(word) = 1);
 			}
+		} else if( bSiteList.contains(word)){
+			//something with corresponding site being tested against
+			// something about putting stuff in cSiteList maybe
 		}
 	}
+	// iterate through SiteDictionary and find most common.
+	// check domains against siteList
 }
 
 if (url_domain(location.href) === "mail.google.com"){
