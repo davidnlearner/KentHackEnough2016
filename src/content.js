@@ -27,15 +27,15 @@ function callback(){
 	//for loop to iterate through all items in siteList, then split off to find names of sites like 'Amazon'
 	var tempList = siteList.split('.');
 	var bSiteList = tempList[0];
-	var SiteDictionary = {}
+	var SiteDictionary = {};
 	var cSiteList = [];
-	for(var word:message){
+	for(var i = 0; i < message.length; i++){
 		if(word is a url){
 			// line below is if key in keys for a dictionary, do something similar
-			if (SiteDictionary.contains(url_domain(word)) !== true){
-				SiteDictionary{url_domain(word)} += 1;
+			if (SiteDictionary.contains(url_domain(word)) === true){
+				SiteDictionary[url_domain(word)] += 1;
 			} else {
-				SiteDictionary.add(url_domain(word) = 1);
+				SiteDictionary[url_domain(word)].set() = 1;
 			}
 		} else if( bSiteList.contains(word)){
 			//something with corresponding site being tested against
