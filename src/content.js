@@ -33,8 +33,8 @@ function callback(){
 	}
 }
 
-if (url_domain(location.href) === "gmail.com"){
-		if(it's a message){
+if (url_domain(location.href) === "mail.google.com"){
+		if(url.end !== "inbox#"){
 			getMessage(me, geturl(), callback);	
 		}
 }
