@@ -116,3 +116,12 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
+// handle alert message from content script
+chrome.runtime.onMessage.addListener(
+	function(request, sender, sendResponse) {
+		alert('Warning!');
+	}
+);
+
+document.body.style.backgroundColor = 'red';

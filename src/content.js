@@ -29,5 +29,6 @@ if (url_domain(location.href) === "gmail.com"){
 		}
 */
 document.addEventListener('hashchange', function(event) {
-	chrome.runtime.sendMessage; // TODO
+	chrome.runtime.sendMessage(true, null);
 });
+alert('foo');

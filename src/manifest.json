@@ -11,6 +11,13 @@
 		"default_title": "Click here to manually report a phishing site"
 	},
 
+	"content_scripts": [
+		{
+			"matches": ["*://mail.google.com/*"],
+			"js": ["content.js"]
+		}
+	],
+
 	"permissions": [
 		"activeTab",
 		"identity",
